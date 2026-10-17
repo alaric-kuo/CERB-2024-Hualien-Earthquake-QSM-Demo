@@ -79,6 +79,18 @@ B1、ISO、RF 各有不同的觀測角色。B1 提供進入結構的來源歷時
 
 ![三方向加速度均方根比例](figures/01_acceleration_RMS_ratio_summary.png)
 
+### 1.4 三層觀測之間的相對狀態
+
+各層峰值和均方根能說明反應尺度，但一個結構場的演化也表現在不同觀測位置之間的相對關係。把短向、長向與垂直向的加速度放在同一個三維向量中，可以觀察 B1–ISO 與 ISO–RF 兩個區段的相對軌跡；另將向量幅值及角度隨時間展開，就能分辨相對反應的大小與方向如何共同變化。這兩張成果圖呈現的是**三方向量測構成的相對加速度狀態**，不能直接當成構件位移、力或已經量測到的耗散功。
+
+**圖 R1｜三維相對軌跡**
+
+![B1–ISO 與 ISO–RF 三維相對加速度軌跡](figures/01_relative_state_vector_3d_trajectories.png)
+
+**圖 R2｜相對幅值與角度**
+
+![三層觀測相對加速度向量的幅值與角度](figures/02_relative_state_vector_magnitude_angle.png)
+
 
 ---
 
@@ -328,14 +340,46 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 ![模式一短向於42.400秒的場域影格](figures/Mode_1_transverse_s056_t042p400s_field_channel.png)
 
 
-<details>
-<summary>展開模式一三個方向的波形圖與場影格（原始六張成果圖）</summary>
+**模式一｜三方向計算與實測波形**
 
-| 方向 | 計算與實測波形 | 42.400 秒結構場 |
-|:---:|:---:|:---:|
-| 短向 | ![模式一短向波形](figures/Mode_1_transverse_calculated_evolution.png) | ![模式一短向結構場](figures/Mode_1_transverse_s056_t042p400s_field_channel.png) |
-| 長向 | ![模式一長向波形](figures/Mode_1_longitudinal_calculated_evolution.png) | ![模式一長向結構場](figures/Mode_1_longitudinal_s056_t042p400s_field_channel.png) |
-| 垂直向 | ![模式一垂直向波形](figures/Mode_1_vertical_calculated_evolution.png) | ![模式一垂直向結構場](figures/Mode_1_vertical_s056_t042p400s_field_channel.png) |
+以下三張原始 Structural Response 成果圖依序對照短向、長向與垂直向的 B1、ISO、RF 波形。這些圖是模式一的直接計算成果，原有的比較曲線與時間軸完整保留。閱讀本模式的數值表時，應同時觀察實測與計算的**正負振幅、相位及時間歷程**，避免只由單一相關係數或極值推論整段地震反應。
+
+**短向｜波形**
+
+![模式一短向：三層實測及計算加速度波形](figures/Mode_1_transverse_calculated_evolution.png)
+
+**長向｜波形**
+
+![模式一長向：三層實測及計算加速度波形](figures/Mode_1_longitudinal_calculated_evolution.png)
+
+**垂直向｜波形**
+
+![模式一垂直向：三層實測及計算加速度波形](figures/Mode_1_vertical_calculated_evolution.png)
+
+**模式一｜加速度時間趨勢**
+
+這一組較長時間的加速度趨勢圖，將量測 B1／ISO／RF 與計算 ISO／RF 的歷時分為上下兩部分，適合對照地震輸入何時增強，以及下游計算值如何隨時間響應。圖中呈現的是觀測層級及對應的計算歷時，並未涵蓋全部 1,649 個節點；完整空間分布仍須回到 42.400 秒場影格與三支演化影片。不同模式、不同方向的縱軸尺度必須分別閱讀。
+
+**短向｜場趨勢**
+
+![模式一短向：結構場加速度演化趨勢](figures/Mode_1_transverse_response_trend.png)
+
+**長向｜場趨勢**
+
+![模式一長向：結構場加速度演化趨勢](figures/Mode_1_longitudinal_response_trend.png)
+
+**垂直向｜場趨勢**
+
+![模式一垂直向：結構場加速度演化趨勢](figures/Mode_1_vertical_response_trend.png)
+
+<details>
+<summary>模式一｜42.400 秒三方向場影格</summary>
+
+| 方向 | 42.400 秒場影格 |
+|:---:|:---:|
+| 短向 | ![模式一短向 42.400 秒場影格](figures/Mode_1_transverse_s056_t042p400s_field_channel.png) |
+| 長向 | ![模式一長向 42.400 秒場影格](figures/Mode_1_longitudinal_s056_t042p400s_field_channel.png) |
+| 垂直向 | ![模式一垂直向 42.400 秒場影格](figures/Mode_1_vertical_s056_t042p400s_field_channel.png) |
 
 </details>
 
@@ -364,14 +408,46 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 ![模式二長向於42.400秒的場域影格](figures/Mode_2_longitudinal_s056_t042p400s_field_channel.png)
 
 
-<details>
-<summary>展開模式二三個方向的波形圖與場影格（原始六張成果圖）</summary>
+**模式二｜三方向計算與實測波形**
 
-| 方向 | 計算與實測波形 | 42.400 秒結構場 |
-|:---:|:---:|:---:|
-| 短向 | ![模式二短向波形](figures/Mode_2_transverse_calculated_evolution.png) | ![模式二短向結構場](figures/Mode_2_transverse_s056_t042p400s_field_channel.png) |
-| 長向 | ![模式二長向波形](figures/Mode_2_longitudinal_calculated_evolution.png) | ![模式二長向結構場](figures/Mode_2_longitudinal_s056_t042p400s_field_channel.png) |
-| 垂直向 | ![模式二垂直向波形](figures/Mode_2_vertical_calculated_evolution.png) | ![模式二垂直向結構場](figures/Mode_2_vertical_s056_t042p400s_field_channel.png) |
+以下三張原始 Structural Response 成果圖依序對照短向、長向與垂直向的 B1、ISO、RF 波形。這些圖是模式二的直接計算成果，原有的比較曲線與時間軸完整保留。閱讀本模式的數值表時，應同時觀察實測與計算的**正負振幅、相位及時間歷程**，避免只由單一相關係數或極值推論整段地震反應。
+
+**短向｜波形**
+
+![模式二短向：三層實測及計算加速度波形](figures/Mode_2_transverse_calculated_evolution.png)
+
+**長向｜波形**
+
+![模式二長向：三層實測及計算加速度波形](figures/Mode_2_longitudinal_calculated_evolution.png)
+
+**垂直向｜波形**
+
+![模式二垂直向：三層實測及計算加速度波形](figures/Mode_2_vertical_calculated_evolution.png)
+
+**模式二｜加速度時間趨勢**
+
+這一組較長時間的加速度趨勢圖，將量測 B1／ISO／RF 與計算 ISO／RF 的歷時分為上下兩部分，適合對照地震輸入何時增強，以及下游計算值如何隨時間響應。圖中呈現的是觀測層級及對應的計算歷時，並未涵蓋全部 1,649 個節點；完整空間分布仍須回到 42.400 秒場影格與三支演化影片。不同模式、不同方向的縱軸尺度必須分別閱讀。
+
+**短向｜場趨勢**
+
+![模式二短向：結構場加速度演化趨勢](figures/Mode_2_transverse_response_trend.png)
+
+**長向｜場趨勢**
+
+![模式二長向：結構場加速度演化趨勢](figures/Mode_2_longitudinal_response_trend.png)
+
+**垂直向｜場趨勢**
+
+![模式二垂直向：結構場加速度演化趨勢](figures/Mode_2_vertical_response_trend.png)
+
+<details>
+<summary>模式二｜42.400 秒三方向場影格</summary>
+
+| 方向 | 42.400 秒場影格 |
+|:---:|:---:|
+| 短向 | ![模式二短向 42.400 秒場影格](figures/Mode_2_transverse_s056_t042p400s_field_channel.png) |
+| 長向 | ![模式二長向 42.400 秒場影格](figures/Mode_2_longitudinal_s056_t042p400s_field_channel.png) |
+| 垂直向 | ![模式二垂直向 42.400 秒場影格](figures/Mode_2_vertical_s056_t042p400s_field_channel.png) |
 
 </details>
 
@@ -416,14 +492,46 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 ![模式三長向於42.400秒的場域影格](figures/Mode_3_longitudinal_s056_t042p400s_field_channel.png)
 
 
-<details>
-<summary>展開模式三三個方向的波形圖與場影格（原始六張成果圖）</summary>
+**模式三｜三方向計算與實測波形**
 
-| 方向 | 計算與實測波形 | 42.400 秒結構場 |
-|:---:|:---:|:---:|
-| 短向 | ![模式三短向波形](figures/Mode_3_transverse_calculated_evolution.png) | ![模式三短向結構場](figures/Mode_3_transverse_s056_t042p400s_field_channel.png) |
-| 長向 | ![模式三長向波形](figures/Mode_3_longitudinal_calculated_evolution.png) | ![模式三長向結構場](figures/Mode_3_longitudinal_s056_t042p400s_field_channel.png) |
-| 垂直向 | ![模式三垂直向波形](figures/Mode_3_vertical_calculated_evolution.png) | ![模式三垂直向結構場](figures/Mode_3_vertical_s056_t042p400s_field_channel.png) |
+以下三張原始 Structural Response 成果圖依序對照短向、長向與垂直向的 B1、ISO、RF 波形。這些圖是模式三的直接計算成果，原有的比較曲線與時間軸完整保留。閱讀本模式的數值表時，應同時觀察實測與計算的**正負振幅、相位及時間歷程**，避免只由單一相關係數或極值推論整段地震反應。
+
+**短向｜波形**
+
+![模式三短向：三層實測及計算加速度波形](figures/Mode_3_transverse_calculated_evolution.png)
+
+**長向｜波形**
+
+![模式三長向：三層實測及計算加速度波形](figures/Mode_3_longitudinal_calculated_evolution.png)
+
+**垂直向｜波形**
+
+![模式三垂直向：三層實測及計算加速度波形](figures/Mode_3_vertical_calculated_evolution.png)
+
+**模式三｜加速度時間趨勢**
+
+這一組較長時間的加速度趨勢圖，將量測 B1／ISO／RF 與計算 ISO／RF 的歷時分為上下兩部分，適合對照地震輸入何時增強，以及下游計算值如何隨時間響應。圖中呈現的是觀測層級及對應的計算歷時，並未涵蓋全部 1,649 個節點；完整空間分布仍須回到 42.400 秒場影格與三支演化影片。不同模式、不同方向的縱軸尺度必須分別閱讀。
+
+**短向｜場趨勢**
+
+![模式三短向：結構場加速度演化趨勢](figures/Mode_3_transverse_response_trend.png)
+
+**長向｜場趨勢**
+
+![模式三長向：結構場加速度演化趨勢](figures/Mode_3_longitudinal_response_trend.png)
+
+**垂直向｜場趨勢**
+
+![模式三垂直向：結構場加速度演化趨勢](figures/Mode_3_vertical_response_trend.png)
+
+<details>
+<summary>模式三｜42.400 秒三方向場影格</summary>
+
+| 方向 | 42.400 秒場影格 |
+|:---:|:---:|
+| 短向 | ![模式三短向 42.400 秒場影格](figures/Mode_3_transverse_s056_t042p400s_field_channel.png) |
+| 長向 | ![模式三長向 42.400 秒場影格](figures/Mode_3_longitudinal_s056_t042p400s_field_channel.png) |
+| 垂直向 | ![模式三垂直向 42.400 秒場影格](figures/Mode_3_vertical_s056_t042p400s_field_channel.png) |
 
 </details>
 
@@ -451,14 +559,46 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 ![模式四短向於42.400秒的場域影格](figures/Mode_4_transverse_s056_t042p400s_field_channel.png)
 
 
-<details>
-<summary>展開模式四三個方向的波形圖與場影格（原始六張成果圖）</summary>
+**模式四｜三方向計算與實測波形**
 
-| 方向 | 計算與實測波形 | 42.400 秒結構場 |
-|:---:|:---:|:---:|
-| 短向 | ![模式四短向波形](figures/Mode_4_transverse_calculated_evolution.png) | ![模式四短向結構場](figures/Mode_4_transverse_s056_t042p400s_field_channel.png) |
-| 長向 | ![模式四長向波形](figures/Mode_4_longitudinal_calculated_evolution.png) | ![模式四長向結構場](figures/Mode_4_longitudinal_s056_t042p400s_field_channel.png) |
-| 垂直向 | ![模式四垂直向波形](figures/Mode_4_vertical_calculated_evolution.png) | ![模式四垂直向結構場](figures/Mode_4_vertical_s056_t042p400s_field_channel.png) |
+以下三張原始 Structural Response 成果圖依序對照短向、長向與垂直向的 B1、ISO、RF 波形。這些圖是模式四的直接計算成果，原有的比較曲線與時間軸完整保留。閱讀本模式的數值表時，應同時觀察實測與計算的**正負振幅、相位及時間歷程**，避免只由單一相關係數或極值推論整段地震反應。
+
+**短向｜波形**
+
+![模式四短向：三層實測及計算加速度波形](figures/Mode_4_transverse_calculated_evolution.png)
+
+**長向｜波形**
+
+![模式四長向：三層實測及計算加速度波形](figures/Mode_4_longitudinal_calculated_evolution.png)
+
+**垂直向｜波形**
+
+![模式四垂直向：三層實測及計算加速度波形](figures/Mode_4_vertical_calculated_evolution.png)
+
+**模式四｜加速度時間趨勢**
+
+這一組較長時間的加速度趨勢圖，將量測 B1／ISO／RF 與計算 ISO／RF 的歷時分為上下兩部分，適合對照地震輸入何時增強，以及下游計算值如何隨時間響應。圖中呈現的是觀測層級及對應的計算歷時，並未涵蓋全部 1,649 個節點；完整空間分布仍須回到 42.400 秒場影格與三支演化影片。不同模式、不同方向的縱軸尺度必須分別閱讀。
+
+**短向｜場趨勢**
+
+![模式四短向：結構場加速度演化趨勢](figures/Mode_4_transverse_response_trend.png)
+
+**長向｜場趨勢**
+
+![模式四長向：結構場加速度演化趨勢](figures/Mode_4_longitudinal_response_trend.png)
+
+**垂直向｜場趨勢**
+
+![模式四垂直向：結構場加速度演化趨勢](figures/Mode_4_vertical_response_trend.png)
+
+<details>
+<summary>模式四｜42.400 秒三方向場影格</summary>
+
+| 方向 | 42.400 秒場影格 |
+|:---:|:---:|
+| 短向 | ![模式四短向 42.400 秒場影格](figures/Mode_4_transverse_s056_t042p400s_field_channel.png) |
+| 長向 | ![模式四長向 42.400 秒場影格](figures/Mode_4_longitudinal_s056_t042p400s_field_channel.png) |
+| 垂直向 | ![模式四垂直向 42.400 秒場影格](figures/Mode_4_vertical_s056_t042p400s_field_channel.png) |
 
 </details>
 
@@ -479,6 +619,22 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 模式一把**歷史可用資料與外推能力**獨立出來，看單機能否擬似未來一段地震輸入，並在全場先形成具有意義的包絡；模式二讓計算緊貼**當下真實 B1**，檢查關係拓樸自己會顯化多少、在哪些地方集中；模式三再利用逐時 ISO／RF 實測來改變**頻率、相位與振幅響應**，量出 Post 對 Prior 的波形改善，同時追查整場變了多少；模式四施加三點**完全到位的觀測條件**，將重點推往沒有感測器的計算空間。
 
 四種成果由源函數、當步輸入、部分觀測、完整觀測，形成一條可以逐段追蹤的關係場演化實驗。只有把測點波形、全場加速度統計、空間高值、時間事件以及場的複數更新放在一起，才能回答這套方法是否已經顯化這些研究現象。
+
+### 三層觀測對應的物件狀態分布
+
+除了逐時波形與場內加速度分布，診斷成果亦整理了 B1、ISO、RF 觀測附近的**物件狀態密度**。這三張圖可幫助閱讀不同方向、不同模式的場狀態在結構物件上的相對集中情形，應連同 IFC 物件映射與時序演化判讀。圖中的密度屬模型計算狀態的分布，不能直接視為實測構件損傷、概率密度的量子實驗觀測或阻尼器耗能。
+
+**圖 D1｜短向物件狀態**
+
+![短向 B1、ISO、RF 物件狀態密度](figures/transverse_B1_ISO_RF_object_state_density.png)
+
+**圖 D2｜長向物件狀態**
+
+![長向 B1、ISO、RF 物件狀態密度](figures/longitudinal_B1_ISO_RF_object_state_density.png)
+
+**圖 D3｜垂直向物件狀態**
+
+![垂直向 B1、ISO、RF 物件狀態密度](figures/vertical_B1_ISO_RF_object_state_density.png)
 
 ---
 
@@ -581,7 +737,7 @@ V7.6 以前的模式三多次發生 Prior／Post 幾乎重疊，或振幅被錯�
 
 ### 9. 自由場局部高值
 
-模式一／二 的局部高值一度遠高於 B1、ISO、RF 的量測尺度；不同版本也曾出現十倍左右的異常放大。這些數字的形成可能涉及高連通來源、相位累積、輸入驅動或算子尺度。研究應保存完整具有正負方向的加速度與複數關係場，在 IFC 高值節點附近檢查其鄰接、時間持續性與頻率成分，並保留有界控制分支與無裁切主分支。**高值的存在是要研究的場現象，其合理性須由額外證據支持**。
+模式一／2 的局部高值一度遠高於 B1、ISO、RF 的量測尺度；不同版本也曾出現十倍左右的異常放大。這些數字的形成可能涉及高連通來源、相位累積、輸入驅動或算子尺度。研究應保存完整具有正負方向的加速度與複數關係場，在 IFC 高值節點附近檢查其鄰接、時間持續性與頻率成分，並保留有界控制分支與無裁切主分支。**高值的存在是要研究的場現象，其合理性須由額外證據支持**。
 
 ### 10. 驗收證據的分層
 
@@ -629,7 +785,7 @@ V7.6 以前的模式三多次發生 Prior／Post 幾乎重疊，或振幅被錯�
 ### D. 實測、全場與科學結果
 
 23. **三軸三層級的真實歷時核對。** 加速度正負值（Gal）、軸向方向、時間間隔、峰值、相位與頻率比較都保留原始對齊，不人工平移時間軸提高相關性。
-24. **四模式完整相關性。** 模式一／二 保留 Calculated 與 Measured；模式三／四 分開保存 Prior、Post 及其 Pearson r、RMSE、MAE、峰值，主震與完整演化區間各自評估。
+24. **四模式完整相關性。** 模式一／2 保留 Calculated 與 Measured；模式三／4 分開保存 Prior、Post 及其 Pearson r、RMSE、MAE、峰值，主震與完整演化區間各自評估。
 25. **全場加速度分布必須可追查。** 對全部 1,649 節點，保存正負極值、RMS、P50／P95／P99／P99.9、高值比例、前 20 節點、IFC 身分及發生時間。
 26. **不可用採樣快照極值冒充逐步全歷時極值。** 102 張持久化快照與所有 5,821 個求解時間步的統計範圍需要明確區分。
 27. **重要局部事件單獨驗證。** 包括短向 42–43 秒 ISO 高峰及 RF 對應衰減、長向 ISO／RF 之相位與波形，避免平均值抹除短時現象。
@@ -654,3 +810,22 @@ V7.6 以前的模式三多次發生 Prior／Post 幾乎重疊，或振幅被錯�
 ### 公開範圍與研究成果
 
 本文件為僅供學術團隊交流的工作草稿，請勿直接引用或公開轉載。本文整理了建築模型建構、三方向三層級觀測、四種演化模式、數值成果及十條實作失效鏈，仍須經學術審閱與確認。實際公開的圖片與影片依授權狀況逐項審查；原始實測加速度、完整試驗歷時、來源 IFC 模型、完整節點／關係複數場及求解器原始程式留在研究工作區。本展示包放入已渲染的圖片與影片，是否公開發布仍由研究者依授權範圍決定。
+
+---
+
+## 附錄｜V8.0 圖像成果對照
+
+這份公開展示從 V8.0 診斷影像中選取可直接閱讀的成果。三方向與四模式的 **12 張 Structural Response 波形、12 張加速度時間趨勢**已放在第六章數值表後方直接顯示，並保留各模式 42.400 秒三方向場影格、三支完整影片及動態預覽。第 1 章新增兩張相對狀態向量圖，第 6 章新增三張物件狀態密度圖；來源資料仍以原始研究工作區保存。
+
+時間差分診斷另外列在下表，供檢查個別模式的短時變化，不將它作為四模式科學成效的唯一判定依據。以下只提供既有診斷圖像的連結，不公開相應 CSV 數列，也不把差分訊號誤當成原始加速度場的整體物理驗證。
+
+**表 A1｜時序補充圖**
+
+| 模式 | 短向 | 長向 | 垂直向 |
+|:---:|:---:|:---:|:---:|
+| 1 | [查看圖像](figures/Mode_1_transverse_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_1_longitudinal_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_1_vertical_temporal_change_diagnostic.png) |
+| 2 | [查看圖像](figures/Mode_2_transverse_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_2_longitudinal_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_2_vertical_temporal_change_diagnostic.png) |
+| 3 | [查看圖像](figures/Mode_3_transverse_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_3_longitudinal_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_3_vertical_temporal_change_diagnostic.png) |
+| 4 | [查看圖像](figures/Mode_4_transverse_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_4_longitudinal_temporal_change_diagnostic.png) | [查看圖像](figures/Mode_4_vertical_temporal_change_diagnostic.png) |
+
+原始診斷檔另包含四模式、三方向、各 **102 個持久化時間快照**的空間場影格，以及每個模式與方向的一張三層級加速度時間趨勢圖。這次公開以代表時刻的場影格、三層級時間趨勢圖及三支四模式動畫呈現其時間與空間變化，未將逾千張逐時影格逐張塞進 README，也沒有把研究原始資料或求解程式一起公開。這樣的內容選擇是為了讓讀者可以沿著時間與方向閱讀演化，並清楚區分原有輸出、公開圖像與仍保留的計算資料。
