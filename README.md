@@ -659,7 +659,7 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 
 **影片 1｜短向四模式動畫**
 
-[短向四模式高解析播放器](viewer.html#transverse)　｜　[開啟短向完整 MP4](videos/CERB_transverse_four_modes.mp4)
+[短向四模式高解析播放器](https://alaric-kuo.github.io/CERB-2024-Hualien-Earthquake-QSM-Demo/viewer.html#transverse)　｜　[開啟短向完整 MP4](videos/CERB_transverse_four_modes.mp4)
 
 ### 長向｜自由場與導正
 
@@ -667,7 +667,7 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 
 **影片 2｜長向四模式動畫**
 
-[長向四模式高解析播放器](viewer.html#longitudinal)　｜　[開啟長向完整 MP4](videos/CERB_longitudinal_four_modes.mp4)
+[長向四模式高解析播放器](https://alaric-kuo.github.io/CERB-2024-Hualien-Earthquake-QSM-Demo/viewer.html#longitudinal)　｜　[開啟長向完整 MP4](videos/CERB_longitudinal_four_modes.mp4)
 
 ### 垂直向｜第三套場
 
@@ -675,7 +675,7 @@ f_{\mathrm{corr}}(t)=\frac{a_{\mathrm{post}}(t)-a_{\mathrm{prior}}(t)}{a_{\mathr
 
 **影片 3｜垂直向四模式動畫**
 
-[垂直向四模式高解析播放器](viewer.html#vertical)　｜　[開啟垂直向完整 MP4](videos/CERB_vertical_four_modes.mp4)
+[垂直向四模式高解析播放器](https://alaric-kuo.github.io/CERB-2024-Hualien-Earthquake-QSM-Demo/viewer.html#vertical)　｜　[開啟垂直向完整 MP4](videos/CERB_vertical_four_modes.mp4)
 
 ### 結構通道與場趨勢
 
