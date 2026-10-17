@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light">
+<title>CERB｜QSM V8.0 四模式演化</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif}
+*{box-sizing:border-box} body{margin:0;background:#12151b;color:#e9edf5}
+main{margin:0 auto;max-width:1960px;padding:clamp(14px,2.4vw,32px)}
+h1{font-size:clamp(1.2rem,2.5vw,2.1rem);margin:0 0 12px}
+p{color:#b7c2d0;line-height:1.65}nav{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+a{color:#aacdff}.choice{border:1px solid #43516b;color:#e9edf5;padding:10px 18px;border-radius:8px;text-decoration:none}
+.choice:focus-visible,.choice:hover,.choice[aria-current="true"]{background:#243a57}
+video{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#000;display:block}
+.panel{border:1px solid #354051;border-radius:12px;overflow:hidden}
+small{color:#b7c2d0;display:block;margin-top:12px}
+</style></head><body><main>
+<h1>CERB 2024 花蓮地震｜QSM-IM Published V8.0</h1>
+<p>四模式 × 三方向結構加速度場演化。播放器保留 MP4 原始 1920 × 1080 畫面比例，支援全螢幕與時間定位。</p>
+<nav aria-label="選擇方向">
+<a class="choice" href="#transverse" data-d="transverse">短向 Transverse</a>
+<a class="choice" href="#longitudinal" data-d="longitudinal">長向 Longitudinal</a>
+<a class="choice" href="#vertical" data-d="vertical">垂直向 Vertical</a></nav>
+<div class="panel"><video id="clip" controls playsinline preload="metadata" aria-label="CERB 四模式演化影片"></video></div>
+<small id="current"></small><p><a id="mp4" href="#">以原檔開啟 MP4</a>　｜　<a href="README.md">閱讀完整研究 README</a></p>
+<script>
+const v=document.getElementById('clip'), links=[...document.querySelectorAll('[data-d]')], status=document.getElementById('current'), mp4=document.getElementById('mp4');
+const known={transverse:'短向',longitudinal:'長向',vertical:'垂直向'};
+function select(){const requested=location.hash.slice(1); const id=Object.prototype.hasOwnProperty.call(known,requested)?requested:'transverse';
+const p='videos/CERB_'+id+'_four_modes.mp4?replay=20261017_173047_8443649f'; if(v.getAttribute('src')!==p){v.pause();v.setAttribute('src',p);v.load();}
+status.textContent=known[id]+'｜原生四模式 MP4'; mp4.href=p; for(const a of links)a.setAttribute('aria-current',String(a.dataset.d===id));}
+window.addEventListener('hashchange',select);select();
+</script></main></body></html>
