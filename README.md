@@ -173,7 +173,7 @@ B^{\dagger} & 0
 i\frac{\partial\Psi(t)}{\partial t}=H_B\Psi(t)
 ```
 
-這裡將演化所需的時間尺度吸收在 Hamiltonian 的係數中，$\Omega$ 與實測秒數之間的對照仍須遵循前面十組波包候選校正及科學 OPEN 的判定。把方程展開後，節點與關係會相互驅動：
+這裡將演化所需的時間尺度吸收在 Hamiltonian 的係數中， $\Omega$ 與實測秒數之間的對照仍須遵循前面十組波包候選校正及科學 OPEN 的判定。把方程展開後，節點與關係會相互驅動：
 
 ```math
 \begin{aligned}
